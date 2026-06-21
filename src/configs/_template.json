@@ -1,0 +1,62 @@
+{
+  "slug": "restaurant-slug",
+  "name": "Restaurant Name",
+  "city": "City Name",
+  "tagline": "Sweet Moments Start Here.",
+  "heroSubtext": "Short placeholder line under the headline — replace with your restaurant intro.",
+  "aboutTitle": "Our Kitchen",
+  "aboutText": "First paragraph about your restaurant, cuisine, and atmosphere.",
+  "aboutText2": "Second paragraph with more detail about ingredients, service, or story.",
+  "accentColor": "#9B827B",
+  "accentSecondary": "#4A3022",
+  "logo": "/previews/restaurant-slug/logo.svg",
+  "colors": {
+    "header": "#9B827B",
+    "cream": "#FDF8F1",
+    "text": "#4A3022",
+    "textLight": "#FFFFFF",
+    "button": "#4A3022",
+    "card1": "#E8D4D4",
+    "card2": "#E8DFD0",
+    "card3": "#D9CDDC"
+  },
+  "navLinks": ["Home", "Menu", "About", "Contact"],
+  "heroImage": "/previews/restaurant-slug/hero.svg",
+  "aboutImage": "/previews/restaurant-slug/about.svg",
+  "features": [
+    {
+      "label": "Open Daily",
+      "icon": "☕",
+      "description": "Short feature description line."
+    },
+    {
+      "label": "Seasonal Menu",
+      "icon": "✦",
+      "description": "Short feature description line."
+    }
+  ],
+  "menuItems": [
+    {
+      "name": "Dish One",
+      "price": "14€",
+      "caption": "Handcrafted starter",
+      "image": "/previews/restaurant-slug/item1.svg"
+    },
+    {
+      "name": "Dish Two",
+      "price": "22€",
+      "caption": "Chef's signature plate",
+      "image": "/previews/restaurant-slug/item2.svg"
+    },
+    {
+      "name": "Dish Three",
+      "price": "9€",
+      "caption": "House dessert",
+      "image": "/previews/restaurant-slug/item3.svg"
+    }
+  ],
+  "footerBrands": ["Partner One", "Partner Two", "Partner Three", "Partner Four"],
+  "ctaText": "Read More",
+  "aboutCtaText": "Discover More",
+  "contactEmail": "hello@restaurant.com"
+}

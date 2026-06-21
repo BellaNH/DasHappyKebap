@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Dancing+Script:wght@500;600&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap");
+@import "tailwindcss";
+@import "./layout.css";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-script: "Dancing Script", cursive;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Oswald", "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+[id] {
+  scroll-margin-top: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

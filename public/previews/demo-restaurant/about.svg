@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <rect width="600" height="600" rx="40" fill="#E8DFD0"/>
+  <circle cx="300" cy="280" r="140" fill="#D9CDDC"/>
+  <circle cx="300" cy="260" r="100" fill="#A68B83"/>
+  <text x="300" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#4A3022" opacity="0.5">about.png</text>
+</svg>

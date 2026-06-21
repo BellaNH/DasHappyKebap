@@ -1,0 +1,62 @@
+{
+  "slug": "demo-restaurant",
+  "name": "Maison",
+  "city": "Paris",
+  "tagline": "Sweet Moments Start Here.",
+  "heroSubtext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A warm table, seasonal plates, and soft hospitality.",
+  "aboutTitle": "Maison Kitchen",
+  "aboutText": "Our chefs blend classic technique with modern comfort food. Every plate is designed to feel luxurious yet familiar — perfect for long lunches and quiet evenings.",
+  "aboutText2": "From the first bite to the last, we source seasonal ingredients and prepare each dish with care. Visit us in the heart of the city.",
+  "accentColor": "#9B827B",
+  "accentSecondary": "#4A3022",
+  "logo": "/previews/demo-restaurant/logo.svg",
+  "colors": {
+    "header": "#9B827B",
+    "cream": "#FDF8F1",
+    "text": "#4A3022",
+    "textLight": "#FFFFFF",
+    "button": "#4A3022",
+    "card1": "#E8D4D4",
+    "card2": "#E8DFD0",
+    "card3": "#D9CDDC"
+  },
+  "navLinks": ["Home", "Menu", "About", "Contact"],
+  "heroImage": "/previews/demo-restaurant/hero.svg",
+  "aboutImage": "/previews/demo-restaurant/about.svg",
+  "features": [
+    {
+      "label": "Open Daily",
+      "icon": "☕",
+      "description": "Lunch and dinner service, seven days a week."
+    },
+    {
+      "label": "Seasonal Menu",
+      "icon": "✦",
+      "description": "Rotating dishes inspired by the harvest."
+    }
+  ],
+  "menuItems": [
+    {
+      "name": "Aatis",
+      "price": "18€",
+      "caption": "Layered & light",
+      "image": "/previews/demo-restaurant/item1.svg"
+    },
+    {
+      "name": "Lermi",
+      "price": "24€",
+      "caption": "Rich & golden",
+      "image": "/previews/demo-restaurant/item2.svg"
+    },
+    {
+      "name": "Flitre",
+      "price": "10€",
+      "caption": "Sweet finish",
+      "image": "/previews/demo-restaurant/item3.svg"
+    }
+  ],
+  "footerBrands": ["Maison", "Harvest", "Table", "Studio"],
+  "ctaText": "Read More",
+  "aboutCtaText": "Discover More",
+  "contactEmail": "hello@maison-restaurant.com"
+}

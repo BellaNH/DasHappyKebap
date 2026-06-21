@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect width="800" height="800" fill="#A68B83" opacity="0"/>
+  <ellipse cx="400" cy="620" rx="180" ry="24" fill="#000" opacity="0.12"/>
+  <circle cx="400" cy="380" r="220" fill="#F5EDE4"/>
+  <circle cx="400" cy="360" r="170" fill="#8B6F63"/>
+  <ellipse cx="400" cy="300" rx="90" ry="50" fill="#E8D4D4"/>
+  <text x="400" y="720" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#4A3022" opacity="0.5">hero.png</text>
+</svg>

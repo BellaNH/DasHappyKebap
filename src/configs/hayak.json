@@ -1,0 +1,200 @@
+{
+  "slug": "hayak",
+  "name": "Hayak",
+  "city": "Your City",
+  "welcomeText": "Welcome to Hayak",
+  "tagline": "Taste The Difference",
+  "heroSubtext": "Bold flavors, fresh ingredients, and meals made to share — from grills and shawarma to burgers and pizza.",
+  "promoText": "🔥 Free delivery on orders over $30 · Join for exclusive weekly deals",
+  "aboutTitle": "A World Of Flavors",
+  "aboutText": "At Hayak, we bring together the best of street food and home-style cooking. Every dish is prepared fresh, seasoned boldly, and served with warmth.",
+  "aboutText2": "Whether you're craving a juicy burger, sizzling shawarma, or a comforting plate of kabsa — we've got something to satisfy every appetite.",
+  "aboutHighlights": [
+    "Fresh ingredients daily",
+    "Fast delivery & pickup",
+    "Family-friendly portions",
+    "Signature house sauces"
+  ],
+  "accentColor": "#EF3E48",
+  "accentSecondary": "#FFC419",
+  "logo": "/previews/hayak/logo.jpg",
+  "colors": {
+    "header": "#8A183A",
+    "primary": "#8A183A",
+    "accent": "#EF3E48",
+    "secondary": "#FFC419",
+    "cream": "#FFFBF5",
+    "text": "#3A1528",
+    "textLight": "#FFFFFF",
+    "button": "#FFC419",
+    "buttonText": "#3A1528",
+    "card1": "#FFE566",
+    "card2": "#F5989C",
+    "card3": "#FFD966"
+  },
+  "navLinks": ["Home", "Menu", "About", "Contact"],
+  "navItems": [
+    { "key": "Home", "label": "Home" },
+    { "key": "Menu", "label": "Menu" },
+    { "key": "About", "label": "About" },
+    { "key": "Contact", "label": "Contact" }
+  ],
+  "heroImage": "/previews/hayak/hero.svg",
+  "aboutImage": "/previews/hayak/about.svg",
+  "whyChooseTitle": "Why Choose Us",
+  "whyChooseHeadline": "Savor The Journey, Discover The Delight",
+  "whyChooseItems": [
+    {
+      "icon": "🥗",
+      "title": "Quality Product",
+      "description": "Premium ingredients picked for flavor and freshness."
+    },
+    {
+      "icon": "🍳",
+      "title": "Fresh Food",
+      "description": "Prepared to order — never sitting under a heat lamp."
+    },
+    {
+      "icon": "👨‍🍳",
+      "title": "Best Chef",
+      "description": "Experienced kitchen team with bold, signature recipes."
+    },
+    {
+      "icon": "🕐",
+      "title": "Open Daily",
+      "description": "Lunch, dinner, and late-night cravings covered."
+    }
+  ],
+  "menuCategoriesTitle": "Explore Our Menu",
+  "categories": [],
+  "menuSectionSubtitle": "Our Menu",
+  "menuSectionTitle": "Every Dish, Made With Love",
+  "menuShowAllText": "Show All Dishes",
+  "menuShowLessText": "Show Less",
+  "menuItems": [],
+  "popularTitle": "Popular Dishes",
+  "popularItems": [
+    { "name": "Burger", "price": "28 QAR", "keywords": ["burger"] },
+    { "name": "Pizza", "price": "35 QAR", "keywords": ["pizza"] },
+    { "name": "Shawarma", "price": "22 QAR", "keywords": ["shawarma"] },
+    { "name": "Doner Kebab", "price": "24 QAR", "keywords": ["donerkebab"] },
+    { "name": "Teriyaki", "price": "32 QAR", "keywords": ["teriyaki"] },
+    { "name": "Samosa", "price": "12 QAR", "keywords": ["samosa"] }
+  ],
+  "stats": [
+    { "value": "12K+", "label": "Happy Clients" },
+    { "value": "50+", "label": "Menu Items" },
+    { "value": "15+", "label": "Expert Chefs" },
+    { "value": "24/7", "label": "Online Orders" }
+  ],
+  "newsletterTitle": "Join For Exclusive Offers",
+  "newsletterText": "Subscribe and get exclusive deals, new menu drops, and seasonal specials straight to your inbox.",
+  "footerText": "Bold food, bright flavors — every Hayak plate is made with care and taste.",
+  "ctaText": "Read More",
+  "menuCtaText": "View Menu",
+  "aboutCtaText": "Discover More",
+  "contactEmail": "hello@hayak.com",
+  "locale": {
+    "ar": {
+      "welcomeText": "أهلاً في مطعم حياك",
+      "tagline": "كل لقمة لها طعمها الخاص",
+      "heroSubtext": "نكهات جريئة ومكوّنات طازجة — من الشاورما والبرجر إلى البيتزا والكبسة، أطباق تناسب كل ذوق.",
+      "promoText": "🔥 توصيل مجاني للطلبات فوق ٣٠ ر.ق · اشترك واستمتع بعروضنا الأسبوعية",
+      "aboutTitle": "عالم من النكهات",
+      "aboutText": "في حياك، نجمع بين روح الأكل الشارعي وطهي البيت. كل طبق نسوّيه طازج، تابلانه زين، ونقدّمه بكرم الضيافة.",
+      "aboutText2": "لو كنت تتوق برجر طري، أو شاورما مشوية على الجمر، أو كبسة دسمة — عندنا ما يناسب كل مزاج وجوع.",
+      "aboutEyebrow": "عن حياك",
+      "aboutHighlights": [
+        "مكوّنات طازجة كل يوم",
+        "توصيل سريع واستلام من المطعم",
+        "حصص تناسب العائلة",
+        "صوصاتنا الخاصة اللي تميزنا"
+      ],
+      "whyChooseTitle": "ليش تختارنا",
+      "whyChooseHeadline": "استمتع بكل رحلة واكتشف اللذّة",
+      "whyChooseItems": [
+        {
+          "icon": "🥗",
+          "title": "جودة مضمونة",
+          "description": "مكوّنات مختارة بعناية — طعم ونظافة ما تخيب ظنك."
+        },
+        {
+          "icon": "🍳",
+          "title": "أكل طازج",
+          "description": "نطبخ طلبك وقت ما تطلب — ما في أكل قاعد تحت لمبة."
+        },
+        {
+          "icon": "👨‍🍳",
+          "title": "طهاة محترفين",
+          "description": "فريق مطبخ خبير ووصفاتنا اللي تميزنا."
+        },
+        {
+          "icon": "🕐",
+          "title": "مفتوح كل يوم",
+          "description": "من الغداء للعشاء وحتى جوع الليل — إحنا موجودين."
+        }
+      ],
+      "menuCategoriesTitle": "اكتشف قائمتنا",
+      "menuSectionSubtitle": "قائمتنا",
+      "menuSectionTitle": "كل طبق من القلب",
+      "menuShowAllText": "عرض كل الأطباق",
+      "menuShowLessText": "عرض أقل",
+      "menuEmptyMessage": "ما في أطباق في هذا القسم حالياً.",
+      "popularTitle": "الأكثر طلباً",
+      "popularItems": [
+        { "name": "برجر", "price": "٢٨ ر.ق", "keywords": ["burger"] },
+        { "name": "بيتزا", "price": "٣٥ ر.ق", "keywords": ["pizza"] },
+        { "name": "شاورما", "price": "٢٢ ر.ق", "keywords": ["shawarma"] },
+        { "name": "دنر كباب", "price": "٢٤ ر.ق", "keywords": ["donerkebab"] },
+        { "name": "ترياكي", "price": "٣٢ ر.ق", "keywords": ["teriyaki"] },
+        { "name": "سمبوسة", "price": "١٢ ر.ق", "keywords": ["samosa"] }
+      ],
+      "stats": [
+        { "value": "+١٢ ألف", "label": "زبون سعيد" },
+        { "value": "+٥٠", "label": "صنف في القائمة" },
+        { "value": "+١٥", "label": "طاهٍ محترف" },
+        { "value": "٢٤/٧", "label": "طلب أونلاين" }
+      ],
+      "newsletterTitle": "انضم لعروضنا المميزة",
+      "newsletterText": "اشترك واحصل على عروض حصرية، أطباق جديدة، وعروض موسمية على إيميلك.",
+      "newsletterPlaceholder": "بريدك الإلكتروني",
+      "newsletterButton": "اشترك",
+      "footerText": "أكل جريء ونكهات زاهية — حياك يقدّم كل طبق بعناية وطعم أصيل.",
+      "footerQuickLinksHeading": "روابط سريعة",
+      "footerContactHeading": "تواصل معنا",
+      "footerCopyright": "© ٢٠٢٦ حياك. جميع الحقوق محفوظة.",
+      "ctaText": "اقرأ المزيد",
+      "menuCtaText": "تصفّح القائمة",
+      "aboutCtaText": "اكتشف المزيد",
+      "navItems": [
+        { "key": "Home", "label": "الرئيسية" },
+        { "key": "Menu", "label": "القائمة" },
+        { "key": "About", "label": "من نحن" },
+        { "key": "Contact", "label": "تواصل معنا" }
+      ],
+      "categoryNames": {
+        "all": "الكل",
+        "burger": "برجر",
+        "pizza": "بيتزا",
+        "shawarma": "شاورما",
+        "sides": "مقبلات",
+        "drinks": "مشروبات"
+      },
+      "dishNames": {
+        "Biryani": "برياني",
+        "Naan Bread": "خبز نان",
+        "Doner Kebab": "دنر كباب",
+        "Roast Chicken": "دجاج مشوي",
+        "Orange Juice": "عصير برتقال",
+        "Lemon Juice": "عصير ليمون",
+        "Pakoras": "باكورا",
+        "Teriyaki": "ترياكي",
+        "Shawarma": "شاورما",
+        "Burger": "برجر",
+        "Pizza": "بيتزا",
+        "Kabsa": "كبسة",
+        "Samosa": "سمبوسة"
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <ellipse cx="200" cy="210" rx="115" ry="95" fill="#C34046" opacity="0.35"/>
+  <text x="200" y="360" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#66142A" opacity="0.45">item3.png</text>
+</svg>

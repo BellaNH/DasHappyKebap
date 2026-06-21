@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#D9CDDC" opacity="0"/>
+  <ellipse cx="200" cy="210" rx="110" ry="90" fill="#D9CDDC"/>
+  <circle cx="170" cy="190" r="16" fill="#A68B83"/>
+  <circle cx="220" cy="180" r="14" fill="#C4A4A4"/>
+  <text x="200" y="360" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#4A3022" opacity="0.5">item3</text>
+</svg>
