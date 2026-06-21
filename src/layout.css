@@ -74,8 +74,8 @@
 
 @media (min-width: 1024px) {
   .site-nav--en .site-nav__side--end {
-    margin-right: -1rem;
-    transform: translateX(2.25rem);
+    margin-right: 1rem;
+    transform: none;
   }
 }
 
@@ -84,8 +84,8 @@
   margin-top: 1rem;
   margin-left: -2rem;
   display: block;
-  width: 2.75rem;
-  height: 2.25rem;
+  width: 0.5rem;
+  height: 0.5rem;
   flex-shrink: 0;
   overflow: visible;
   text-decoration: none;
@@ -344,7 +344,7 @@
   position: absolute;
   right: 4%;
   bottom: 0;
-  height: 140%;
+  height: 520px;
   width: auto;
   max-width: none;
   object-fit: contain;
@@ -642,7 +642,16 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .hero-grid {
-    height: 20rem;
+    height: 320px;
+  }
+
+  .hero-grid__media {
+    width: 440px;
+  }
+
+  .hero-grid__image {
+    height: 420px;
+    right: 28px;
   }
 
   .menu-grid {
@@ -661,8 +670,12 @@
     justify-self: center;
   }
 
+  .footer-main__brand-block {
+    padding-left: 3rem;
+  }
+
   .footer-main__desc {
-    margin-left: 1.5rem;
+    margin-left: 0.75rem;
   }
 }
 
@@ -1297,6 +1310,10 @@
   .footer-main__brand {
     --footer-logo-offset-x: -2rem;
   }
+
+  .footer-main__desc {
+    margin-left: 1.5rem;
+  }
 }
 
 .footer-main__brand-block {
@@ -1326,7 +1343,8 @@
 }
 
 .footer-main__desc {
-  margin: 0;
+  margin-block: 0;
+  margin-right: 0;
   font-size: 0.85rem;
   line-height: 1.6;
   opacity: 0.85;
@@ -1392,6 +1410,7 @@
   .footer-main__brand-block {
     margin-inline: auto;
     text-align: center;
+    padding-left: 0;
   }
 
   .footer-main__logo {
@@ -1402,6 +1421,7 @@
   .footer-main__desc {
     max-width: none;
     margin-left: 0;
+    padding-left: 0;
     text-align: center;
   }
 }
