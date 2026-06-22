@@ -7,12 +7,12 @@ export default function WhyChooseUs({ config }) {
     <section className="why-section">
       <div className="container">
         {whyChooseTitle && (
-          <p className="section-eyebrow" style={{ color: 'var(--color-primary)' }}>
+          <p className="section-eyebrow" style={{ color: 'var(--color-primary-bright, var(--color-primary))' }}>
             {whyChooseTitle}
           </p>
         )}
         {whyChooseHeadline && (
-          <h2 className="section-title" style={{ color: 'var(--color-primary)' }}>
+          <h2 className="section-title" style={{ color: 'var(--color-primary-bright, var(--color-primary))' }}>
             {whyChooseHeadline}
           </h2>
         )}

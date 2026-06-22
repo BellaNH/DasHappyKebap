@@ -45,7 +45,7 @@ export default function FeaturedMenu({ config, menuItems: itemsProp, emptyMessag
         {(menuSectionTitle || menuSectionSubtitle) && (
           <div className="menu-section__header">
             {menuSectionSubtitle && (
-              <p className="section-eyebrow" style={{ color: 'var(--color-primary)' }}>
+              <p className="section-eyebrow" style={{ color: 'var(--color-primary-bright, var(--color-primary))' }}>
                 {menuSectionSubtitle}
               </p>
             )}

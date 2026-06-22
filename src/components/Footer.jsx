@@ -14,9 +14,22 @@ export default function Footer({ config }) {
     footerQuickLinksHeading,
     footerContactHeading,
     footerCopyright,
+    footerBg,
+    footerTextColor,
+    footerHeadingColor,
+    footerLinkColor,
   } = config
 
   const logoSrc = footerLogo ?? logo
+  const footerStyle = footerBg
+    ? {
+        background: footerBg,
+        '--footer-body': footerTextColor ?? '#FFFEEC',
+        '--footer-heading': footerHeadingColor ?? '#FBC405',
+        '--footer-link': footerLinkColor ?? '#FDD301',
+        '--footer-muted': 'rgba(255, 254, 236, 0.65)',
+      }
+    : undefined
 
   const items = navItems ?? [
     { key: 'Home', label: 'Home' },
@@ -26,7 +39,11 @@ export default function Footer({ config }) {
   ]
 
   return (
-    <footer id="contact" className="site-footer">
+    <footer
+      id="contact"
+      className={`site-footer${footerBg ? ' site-footer--custom' : ''}`}
+      style={footerStyle}
+    >
       <div className="container footer-main">
         <div className="footer-main__brand">
           {logoSrc ? (

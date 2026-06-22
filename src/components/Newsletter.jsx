@@ -5,19 +5,32 @@ export default function Newsletter({ config }) {
     contactEmail,
     newsletterPlaceholder,
     newsletterButton,
+    newsletterBg,
+    newsletterTextColor,
+    newsletterTitleColor,
   } = config
 
+  const isCustom = Boolean(newsletterBg)
+  const sectionStyle = newsletterBg ? { background: newsletterBg } : undefined
+  const titleColor = newsletterTitleColor ?? newsletterTextColor ?? 'var(--color-text-light)'
+  const bodyColor = newsletterTextColor ?? 'var(--color-text-light)'
+
   return (
-    <section className="newsletter-section">
+    <section
+      className={`newsletter-section${isCustom ? ' newsletter-section--custom' : ''}`}
+      style={sectionStyle}
+    >
       <div className="container newsletter-section__inner">
         <div className="newsletter-section__text">
           {newsletterTitle && (
-            <h2 className="section-title" style={{ color: 'var(--color-text-light)' }}>
+            <h2 className="section-title" style={{ color: titleColor }}>
               {newsletterTitle}
             </h2>
           )}
           {newsletterText && (
-            <p className="newsletter-section__desc">{newsletterText}</p>
+            <p className="newsletter-section__desc" style={{ color: bodyColor }}>
+              {newsletterText}
+            </p>
           )}
         </div>
 

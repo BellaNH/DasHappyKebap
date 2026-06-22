@@ -101,10 +101,17 @@
   .hero-grid__image {
     height: 420px;
     right: 32px;
+    bottom: 0;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .hero-grid__image {
+    right: -10px;
+    bottom: -50px;
+    height: 360px;
   }
 
   .minimalist-page--rtl .hero-grid__image {
-    height: 420px;
+    height: 320px;
     left: 32px;
   }
 }
@@ -137,6 +144,69 @@
 .site-nav__side--end .site-nav__logo-img {
   left: auto;
   right: 0;
+}
+
+/* Dash Happy Kebap — header logo, aligned higher in navbar */
+.minimalist-page[data-slug="dashappykebap"] .site-nav__logo {
+  margin-left: 0;
+  margin-top: 40px;
+}
+
+.minimalist-page[data-slug="dashappykebap"] .site-nav__logo-img {
+  height: 8rem;
+  top: 35%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 1024px) {
+  .minimalist-page[data-slug="dashappykebap"] .site-nav__logo-img {
+    height: 7rem;
+    top: 32%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 767px) {
+  .minimalist-page[data-slug="dashappykebap"] .site-nav__logo {
+    margin-top: 5rem;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .hero-grid__media {
+    margin-top: 0.5rem;
+    margin-bottom: -2.5rem;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .hero-grid__image {
+    height: 21rem;
+    max-width: min(100%, 17rem);
+    transform: translateY(2.5rem);
+  }
+}
+
+/* Dash Happy Kebap — navbar: logo aligned with hero text, links on the right */
+.minimalist-page[data-slug="dashappykebap"] .site-nav {
+  grid-template-columns: auto 1fr auto;
+}
+
+.minimalist-page[data-slug="dashappykebap"] .site-nav__links {
+  justify-content: flex-end;
+  justify-self: stretch;
+  padding-right: 0.5rem;
+}
+
+/* Dash Happy Kebap — welcome line readable on gradient hero */
+.minimalist-page[data-slug="dashappykebap"] .hero-welcome {
+  color: #fbc405;
+  text-shadow: 0 1px 2px rgba(1, 86, 1, 0.45);
+}
+
+.minimalist-page[data-slug="dashappykebap"] .category-item__label {
+  color: var(--color-primary-bright);
+}
+
+.minimalist-page[data-slug="dashappykebap"] .category-item__link--active .category-item__circle,
+.minimalist-page[data-slug="dashappykebap"] .category-item__link:hover .category-item__circle {
+  border-color: var(--color-primary-bright);
 }
 
 .site-nav__links {
@@ -372,7 +442,7 @@
 
 .hero-grid__image {
   position: absolute;
-  right: 4%;
+  right: -4%;
   bottom: 0;
   height: 520px;
   width: auto;
@@ -381,6 +451,13 @@
   object-position: bottom right;
   filter: drop-shadow(0 28px 48px rgba(0, 0, 0, 0.22));
   transform-origin: bottom right;
+}
+
+/* Dash Happy Kebap — custom hero image position (tweak `right` / `bottom` / `height` here) */
+.minimalist-page[data-slug="dashappykebap"] .hero-grid__image {
+  right: -20px;
+  top: -35px;
+  height: 500px;
 }
 
 @media (max-width: 767px) {
@@ -455,6 +532,41 @@
     right: auto;
   }
 
+  /* Dash Happy Kebap — sm: logo & hamburger in separate columns, same top offset */
+  .minimalist-page[data-slug="dashappykebap"] .site-nav {
+    grid-template-columns: 1fr auto;
+    align-items: start;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .site-nav__side--start {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: start;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .site-nav__side--end {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .site-nav__logo {
+    margin-top: 2.5rem;
+    margin-left: 0;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .site-nav__logo-img {
+    position: static;
+    transform: none;
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .site-nav--en .site-nav__side--end {
+    margin-top: 5rem;
+    transform: translate(-2.5rem, 0);
+  }
+
   .hero-header {
     height: auto;
     overflow: hidden;
@@ -522,6 +634,12 @@
     margin-inline: auto;
     object-fit: contain;
     object-position: center;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .hero-grid__image {
+    height: 21rem;
+    max-width: min(100%, 17rem);
+    transform: translateY(2.5rem);
   }
 
   .hero-welcome {
@@ -682,6 +800,14 @@
   .hero-grid__image {
     height: 420px;
     right: 28px;
+    bottom: 0;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .hero-grid__image {
+    right: -30px;
+    bottom: -50px;
+    height: 320px;
+    width: auto !important;
   }
 
   .menu-grid {
@@ -1256,6 +1382,86 @@
   }
 }
 
+/* ── Exclusive offers ── */
+.offers-section {
+  background-color: var(--color-cream);
+  padding: 2.5rem 0 3rem;
+}
+
+.offers-section__title {
+  margin: 0 0 1.5rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.offers-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  padding: 1.25rem 1.25rem 1.5rem;
+  background: #fff;
+  border: 3px solid var(--offer-accent, var(--color-accent));
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.offers-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: var(--offer-accent, var(--color-accent));
+}
+
+.offers-card__badge {
+  display: inline-block;
+  margin-bottom: 0.65rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 9999px;
+  background: var(--offer-accent, var(--color-accent));
+  color: var(--color-button-text);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.offers-card__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.25;
+}
+
+.offers-card__text {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--color-text);
+  opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+  .offers-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ── Newsletter ── */
 .newsletter-section {
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 55%, var(--color-secondary) 100%);
@@ -1311,6 +1517,34 @@
   }
 }
 
+.newsletter-section--custom .newsletter-section__desc {
+  opacity: 1;
+}
+
+.newsletter-section--custom .newsletter-form__input {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #fff;
+  color: var(--color-text);
+}
+
+.newsletter-section--custom .newsletter-form__input::placeholder {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.newsletter-section--custom .newsletter-form__btn {
+  background: var(--color-button);
+  color: var(--color-button-text);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.newsletter-section--custom .newsletter-form__btn:hover {
+  filter: brightness(1.05);
+}
+
+.offers-section--custom .offers-card {
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
 /* ── Footer vivid ── */
 .site-footer {
   background-color: var(--color-cream);
@@ -1359,9 +1593,40 @@
   display: block;
   height: var(--footer-logo-size);
   width: auto;
+  max-width: none;
   object-fit: contain;
   object-position: left top;
   pointer-events: none;
+}
+
+/* Dash Happy Kebap — footer: logo stacked above desc, shared left edge */
+.minimalist-page[data-slug="dashappykebap"] .footer-main__brand-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  max-width: 14rem;
+  padding-top: 0;
+  padding-left: 1.5rem;
+}
+
+.minimalist-page[data-slug="dashappykebap"] .footer-main__logo {
+  position: static;
+  transform: none;
+  height: 4rem;
+  max-height: 4rem;
+  max-width: 9rem;
+  width: auto;
+  margin-left: 0;
+  object-position: left center;
+}
+
+.minimalist-page[data-slug="dashappykebap"] .footer-main__desc {
+  margin-top: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-left: 0;
+  max-width: 100%;
 }
 
 .footer-main__name {
@@ -1426,6 +1691,122 @@
   opacity: 0.6;
 }
 
+.site-footer--custom {
+  color: var(--footer-body);
+}
+
+.site-footer--custom .footer-main {
+  color: var(--footer-body);
+}
+
+.site-footer--custom .footer-main__heading {
+  color: var(--footer-heading);
+  opacity: 1;
+}
+
+.site-footer--custom .footer-main__name {
+  color: var(--footer-heading);
+}
+
+.site-footer--custom .footer-main__desc {
+  color: var(--footer-body);
+  opacity: 0.92;
+}
+
+.site-footer--custom .footer-main__links a,
+.site-footer--custom .footer-main__contact a {
+  color: var(--footer-link);
+  opacity: 1;
+}
+
+.site-footer--custom .footer-main__links a:hover,
+.site-footer--custom .footer-main__contact a:hover {
+  color: var(--footer-heading);
+  text-decoration: underline;
+}
+
+.site-footer--custom .footer-bottom {
+  border-top-color: rgba(255, 255, 255, 0.18);
+}
+
+.site-footer--custom .footer-bottom p {
+  color: var(--footer-muted);
+  opacity: 1;
+}
+
+/* Dash Happy Kebap — why cards: crisp black borders */
+.minimalist-page[data-slug="dashappykebap"] .why-card {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #000000;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+}
+
+.minimalist-page[data-slug="dashappykebap"] .why-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #000000;
+}
+
+/* Dash Happy Kebap — menu cards: yellow = solid fill, orange = white + accent border */
+.minimalist-page[data-slug="dashappykebap"] .menu-card {
+  border-radius: 1rem;
+  border: none;
+  box-shadow: none;
+}
+
+.minimalist-page[data-slug="dashappykebap"] .menu-card::before {
+  display: none;
+}
+
+.minimalist-page[data-slug="dashappykebap"] .menu-card:nth-child(odd) {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+.minimalist-page[data-slug="dashappykebap"] .menu-card:nth-child(even) {
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff !important;
+  border: 3px solid var(--color-accent);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.minimalist-page[data-slug="dashappykebap"] .menu-card:nth-child(even)::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: var(--color-accent);
+}
+
+/* Dash Happy Kebap — Les favoris: bright yellow section */
+.minimalist-page[data-slug="dashappykebap"] .popular-section {
+  background-color: #fbc405 !important;
+}
+
+.minimalist-page[data-slug="dashappykebap"] .menu-card__image,
+.minimalist-page[data-slug="dashappykebap"] .popular-list__thumb,
+.minimalist-page[data-slug="dashappykebap"] .category-item__image {
+  filter: saturate(1.4) contrast(1.1) brightness(1.06);
+}
+
+.minimalist-page[data-slug="dashappykebap"] .category-item__circle {
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 14px rgba(251, 153, 76, 0.45);
+}
+
+.minimalist-page[data-slug="dashappykebap"] .category-item__link--active .category-item__circle {
+  border-color: var(--color-secondary);
+  box-shadow: 0 4px 16px rgba(251, 196, 5, 0.55);
+}
+
 @media (max-width: 767px) {
   .footer-main {
     grid-template-columns: 1fr;
@@ -1446,6 +1827,19 @@
   .footer-main__logo {
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .footer-main__logo {
+    height: 3.25rem;
+    max-height: 3.25rem;
+    max-width: 7.5rem;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .footer-main__brand-block {
+    align-items: center;
+    text-align: center;
+    margin-inline: auto;
+    padding-left: 0;
   }
 
   .footer-main__desc {

@@ -5,8 +5,8 @@ export default function TopBar({ config }) {
     <div
       className="top-bar"
       style={{
-        backgroundColor: 'var(--color-secondary)',
-        color: 'var(--color-button-text)',
+        backgroundColor: config.colors?.promo ?? 'var(--color-secondary)',
+        color: config.colors?.promoText ?? 'var(--color-button-text)',
       }}
     >
       <div className="container">

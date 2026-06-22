@@ -28,10 +28,10 @@ export default function AboutSection({ config }) {
           </div>
 
           <div className="about-grid__content">
-            <p className="section-eyebrow" style={{ color: 'var(--color-primary)' }}>
+            <p className="section-eyebrow" style={{ color: 'var(--color-primary-bright, var(--color-primary))' }}>
               {aboutEyebrow ?? `About ${name}`}
             </p>
-            <h2 className="section-title" style={{ color: 'var(--color-primary)' }}>
+            <h2 className="section-title" style={{ color: 'var(--color-primary-bright, var(--color-primary))' }}>
               {aboutTitle}
             </h2>
             <p className="about-grid__paragraph">{aboutText}</p>

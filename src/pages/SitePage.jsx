@@ -1,11 +1,11 @@
 import { useEffect, useMemo } from 'react'
-import { useParams } from 'react-router-dom'
 import { getConfigBySlug } from '../lib/getConfig'
 import { enrichConfig } from '../lib/restaurantAssets'
 import { applyLocale } from '../lib/localizeConfig'
 import { useLanguage } from '../lib/LanguageContext'
 import { themeStyle } from '../lib/themeStyle'
 import { handleAnchorClick } from '../lib/smoothScroll'
+import ExclusiveOffers from '../components/ExclusiveOffers'
 import Hero from '../components/Hero'
 import WhyChooseUs from '../components/WhyChooseUs'
 import MenuSection from '../components/MenuSection'
@@ -15,11 +15,15 @@ import StatsBar from '../components/StatsBar'
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
 
-export default function PreviewPage() {
-  const { slug: slugParam } = useParams()
-  const slug = slugParam ?? 'hayak'
-  const { lang, dir } = useLanguage()
-  const rawConfig = getConfigBySlug(slug)
+const SLUG = 'dashappykebap'
+
+export default function SitePage() {
+  const { lang, dir, setLang } = useLanguage()
+  const rawConfig = getConfigBySlug(SLUG)
+
+  useEffect(() => {
+    setLang(rawConfig?.defaultLanguage ?? 'fr')
+  }, [rawConfig, setLang])
 
   const config = useMemo(() => {
     if (!rawConfig) return null
@@ -36,10 +40,8 @@ export default function PreviewPage() {
   if (!config) {
     return (
       <main className="flex min-h-svh flex-col items-center justify-center px-6 text-center">
-        <h1 className="font-serif text-3xl">Page not found</h1>
-        <p className="mt-3 opacity-70">
-          No config for <code>{slug}</code>.
-        </p>
+        <h1 className="font-serif text-3xl">Site unavailable</h1>
+        <p className="mt-3 opacity-70">Dash Happy Kebap config could not be loaded.</p>
       </main>
     )
   }
@@ -48,12 +50,14 @@ export default function PreviewPage() {
     <div
       id="top"
       className={`minimalist-page ${dir === 'rtl' ? 'minimalist-page--rtl' : ''}`}
+      data-slug={SLUG}
       style={themeStyle(config)}
       dir={dir}
       onClick={handleAnchorClick}
     >
       <Hero config={config} />
       <WhyChooseUs config={config} />
+      <ExclusiveOffers config={config} />
       <MenuSection config={config} />
       <AboutSection config={config} />
       <PopularDishes config={config} />

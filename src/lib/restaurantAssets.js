@@ -1,4 +1,10 @@
 import heroCover from '../assets/HeroCover.png'
+import shawarmaHeader from '../assets/shawarmaHeader.png'
+import shawarmaHeader2 from '../assets/ShawarmaHeader2.png'
+import kebabHeader3 from '../assets/KebabHeader3.png'
+import kebabHeader4 from '../assets/kebabHeader4.png'
+import dashappykebapLogo from '../assets/dashappykebapLogo.png'
+import dashappykebapLogoFooter from '../assets/DasHappyKebaplogoFooter.png'
 import hayakLogoHeader from '../assets/HayakLogoHeader.png'
 import hayakLogoBurgundy from '../assets/hayak_logo_burgundy.png'
 
@@ -116,6 +122,15 @@ function resolvePopularItems(configItems) {
   }))
 }
 
+const dashappykebapCategories = [
+  { id: 'all', name: 'All', keywords: [] },
+  { id: 'burger', name: 'Burger', keywords: ['burger'] },
+  { id: 'pizza', name: 'Pizza', keywords: ['pizza'] },
+  { id: 'shawarma', name: 'Shawarma', keywords: ['shawarma', 'donerkebab'] },
+  { id: 'sides', name: 'Sides', keywords: ['samosa', 'pakoras'] },
+  { id: 'drinks', name: 'Drinks', keywords: ['orangejus', 'lemonjuice'] },
+]
+
 export const assetOverrides = {
   hayak: {
     hero: heroCover,
@@ -140,6 +155,30 @@ export const assetOverrides = {
           : findDish(...cat.keywords) ?? heroCover,
     })),
   },
+  dashappykebap: {
+    hero: kebabHeader4,
+    logo: dashappykebapLogo,
+    footerLogo: dashappykebapLogoFooter,
+    allDishes: true,
+    menuPriority: [
+      'donerkebab',
+      'shawarma',
+      'kebsa',
+      'burger',
+      'pizza',
+      'teriyaki',
+      'samosa',
+    ],
+    about: findDish('donerkebab') ?? findDish('shawarma'),
+    categories: dashappykebapCategories.map((cat) => ({
+      id: cat.id,
+      name: cat.name,
+      image:
+        cat.id === 'all'
+          ? kebabHeader4
+          : findDish(...cat.keywords) ?? kebabHeader4,
+    })),
+  },
 }
 
 export function enrichConfig(config) {
@@ -158,7 +197,9 @@ export function enrichConfig(config) {
   return {
     ...config,
     logo: assets.logo ?? config.logo,
-    footerLogo: assets.footerLogo ?? config.footerLogo ?? assets.logo ?? config.logo,
+    footerLogo: Object.hasOwn(assets, 'footerLogo')
+      ? assets.footerLogo
+      : (config.footerLogo ?? assets.logo ?? config.logo),
     heroImage: assets.hero ?? config.heroImage,
     aboutImage: assets.about ?? config.aboutImage,
     aboutSecondaryImage: assets.aboutSecondary ?? config.aboutSecondaryImage,

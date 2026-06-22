@@ -9,7 +9,7 @@ function linkHref(key) {
 
 export default function Navbar({ config }) {
   const { lang } = useLanguage()
-  const { name, logo: logoSrc, navItems } = config
+  const { name, logo: logoSrc, navItems, showLanguageToggle = true } = config
   const isAr = lang === 'ar'
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -66,7 +66,7 @@ export default function Navbar({ config }) {
           ))}
         </ul>
       </div>
-      <LanguageToggle />
+      {showLanguageToggle && <LanguageToggle />}
     </div>
   )
 

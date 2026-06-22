@@ -1,5 +1,6 @@
 import Navbar from './Navbar'
 import TornEdge from './TornEdge'
+import HeroCurveWave from './HeroCurveWave'
 import TopBar from './TopBar'
 
 export default function Hero({ config }) {
@@ -8,7 +9,14 @@ export default function Hero({ config }) {
   return (
     <>
       <TopBar config={config} />
-      <header className="hero-header" style={{ backgroundColor: 'var(--color-header)' }}>
+      <header
+        className="hero-header"
+        style={
+          config.heroHeaderBg
+            ? { background: config.heroHeaderBg }
+            : { backgroundColor: 'var(--color-header)' }
+        }
+      >
         <Navbar config={config} />
 
         <div className="container">
@@ -42,7 +50,11 @@ export default function Hero({ config }) {
         </div>
 
         <div className="hero-header__wave">
-          <TornEdge fill="var(--color-cream)" />
+          {config.heroWave === 'curve' ? (
+            <HeroCurveWave fill="var(--color-cream)" />
+          ) : (
+            <TornEdge fill="var(--color-cream)" />
+          )}
         </div>
       </header>
     </>

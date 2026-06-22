@@ -9,11 +9,13 @@ export function themeStyle(config) {
     '--color-button': c.button ?? '#FFC419',
     '--color-button-text': c.buttonText ?? '#2D1018',
     '--color-primary': c.primary ?? '#8A183A',
+    '--color-primary-bright': c.primaryBright ?? c.primary ?? '#8A183A',
     '--color-accent': c.accent ?? config.accentColor ?? '#EF3E48',
     '--color-secondary': c.secondary ?? '#FFC419',
     '--color-card-1': c.card1 ?? '#FFE566',
     '--color-card-2': c.card2 ?? '#F5989C',
     '--color-card-3': c.card3 ?? '#FFD966',
+    '--color-promo': c.promo ?? c.accent ?? config.accentColor ?? '#EF3E48',
     '--accent': config.accentColor ?? c.accent ?? '#EF3E48',
     backgroundColor: c.cream ?? '#FFFBF5',
     color: c.text ?? '#2D1018',
@@ -22,6 +24,9 @@ export function themeStyle(config) {
 
 export function menuCardColors(config) {
   const c = config.colors ?? {}
+  const palette = [c.card1, c.card2].filter(Boolean)
+  if (palette.length) return palette
+
   return [
     c.accent ?? config.accentColor ?? '#EF3E48',
     c.secondary ?? '#FFC419',

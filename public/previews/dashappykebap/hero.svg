@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect width="800" height="800" fill="#FFFEEC"/>
+  <ellipse cx="400" cy="680" rx="160" ry="20" fill="#015601" opacity="0.15"/>
+  <circle cx="400" cy="380" r="200" fill="#FBC405" opacity="0.45"/>
+  <circle cx="480" cy="320" r="80" fill="#FB994C" opacity="0.5"/>
+  <text x="400" y="400" text-anchor="middle" dominant-baseline="middle" font-family="Georgia, serif" font-size="22" fill="#015601">Hero image</text>
+  <text x="400" y="760" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#FB994C">dashappykebap — replace me</text>
+</svg>

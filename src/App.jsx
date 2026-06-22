@@ -1,14 +1,15 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { LanguageProvider } from './lib/LanguageContext'
-import PreviewPage from './pages/PreviewPage'
+import SitePage from './pages/SitePage'
 
 function App() {
   return (
     <LanguageProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<PreviewPage />} />
-          <Route path="/preview/:slug" element={<PreviewPage />} />
+          <Route path="/" element={<SitePage />} />
+          <Route path="/preview/:slug" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
     </LanguageProvider>

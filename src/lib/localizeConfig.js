@@ -1,31 +1,34 @@
 export function applyLocale(config, lang) {
-  if (lang !== 'ar' || !config.locale?.ar) return config
+  const localeBlock =
+    lang === 'ar' ? config.locale?.ar : lang === 'fr' ? config.locale?.fr : null
 
-  const ar = config.locale.ar
+  if (!localeBlock) return config
 
   return {
     ...config,
-    ...ar,
-    navItems: ar.navItems ?? config.navItems,
+    ...localeBlock,
+    navItems: localeBlock.navItems ?? config.navItems,
     categories: (config.categories ?? []).map((cat) => ({
       ...cat,
-      name: ar.categoryNames?.[cat.id] ?? cat.name,
+      name: localeBlock.categoryNames?.[cat.id] ?? cat.name,
     })),
     menuItems: (config.menuItems ?? []).map((item) => ({
       ...item,
-      name: ar.dishNames?.[item.name] ?? item.name,
+      name: localeBlock.dishNames?.[item.name] ?? item.name,
     })),
     popularItems: (config.popularItems ?? []).map((item, index) => {
-      const arItem = ar.popularItems?.[index]
+      const localized = localeBlock.popularItems?.[index]
       return {
         ...item,
-        name: arItem?.name ?? ar.dishNames?.[item.name] ?? item.name,
-        price: arItem?.price ?? item.price,
+        name: localized?.name ?? localeBlock.dishNames?.[item.name] ?? item.name,
+        price: localized?.price ?? item.price,
       }
     }),
-    whyChooseItems: ar.whyChooseItems ?? config.whyChooseItems,
-    aboutHighlights: ar.aboutHighlights ?? config.aboutHighlights,
-    stats: ar.stats ?? config.stats,
+    whyChooseItems: localeBlock.whyChooseItems ?? config.whyChooseItems,
+    aboutHighlights: localeBlock.aboutHighlights ?? config.aboutHighlights,
+    stats: localeBlock.stats ?? config.stats,
+    exclusiveOffersTitle: localeBlock.exclusiveOffersTitle ?? config.exclusiveOffersTitle,
+    exclusiveOffers: localeBlock.exclusiveOffers ?? config.exclusiveOffers,
     locale: config.locale,
   }
 }

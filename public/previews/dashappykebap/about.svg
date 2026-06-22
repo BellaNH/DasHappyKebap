@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect width="800" height="800" fill="#FDD301" opacity="0.25"/>
+  <rect width="800" height="800" fill="#015601" opacity="0.08"/>
+  <circle cx="400" cy="400" r="180" fill="#FB994C" opacity="0.35"/>
+  <text x="400" y="400" text-anchor="middle" dominant-baseline="middle" font-family="Georgia, serif" font-size="22" fill="#015601">About image</text>
+  <text x="400" y="760" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#000000">dashappykebap — replace me</text>
+</svg>

@@ -1,0 +1,370 @@
+{
+  "slug": "dashappykebap",
+  "name": "Dash Happy Kebap",
+  "city": "Your City",
+  "welcomeText": "Welcome to Dash Happy Kebap",
+  "tagline": "Wrap. Grill. Devour.",
+  "heroSubtext": "Flame-kissed kebabs, loaded wraps, and street-food energy — hot off the grill, ready when you are.",
+  "promoText": "🔥 BOGO Wraps every Tuesday · Free drink on orders over $25",
+  "aboutTitle": "Born On The Grill",
+  "aboutText": "Dash Happy Kebap is where bold spices meet sizzling grills. We stack every wrap high, sauce it loud, and serve it with zero chill.",
+  "aboutText2": "From classic döner and shawarma to loaded sides and ice-cold drinks — one bite and you'll know why we're called Happy.",
+  "aboutHighlights": [
+    "Charcoal-grilled kebabs",
+    "Secret house spice blend",
+    "Ready in minutes",
+    "Late-night cravings welcome"
+  ],
+  "accentColor": "#FB994C",
+  "accentSecondary": "#FBC405",
+  "logo": "/previews/dashappykebap/logo.svg",
+  "colors": {
+    "header": "#015601",
+    "primary": "#015601",
+    "primaryBright": "#00AF7E",
+    "accent": "#FB994C",
+    "secondary": "#FBC405",
+    "cream": "#FFFFFF",
+    "text": "#000000",
+    "textLight": "#FFFFFF",
+    "button": "#FDD301",
+    "buttonText": "#000000",
+    "card1": "#FBC405",
+    "card2": "#FF7A2F",
+    "promo": "#FFFFFF",
+    "promoText": "#000000"
+  },
+  "navLinks": ["Home", "Menu", "About", "Contact"],
+  "navItems": [
+    { "key": "Home", "label": "Home" },
+    { "key": "Menu", "label": "Menu" },
+    { "key": "About", "label": "About" },
+    { "key": "Contact", "label": "Contact" }
+  ],
+  "heroImage": "/previews/dashappykebap/hero.svg",
+  "heroHeaderBg": "linear-gradient(145deg, #00AF7E 0%, #00C48E 48%, #FB994C 115%)",
+  "heroWave": "curve",
+  "aboutImage": "/previews/dashappykebap/about.svg",
+  "whyChooseTitle": "The Dash Difference",
+  "whyChooseHeadline": "Fast, Fresh & Full Of Fire",
+  "whyChooseItems": [
+    {
+      "icon": "🔥",
+      "title": "Flame-Grilled",
+      "description": "Real fire, real char — every kebab kissed by the grill."
+    },
+    {
+      "icon": "🌶️",
+      "title": "Secret Spice",
+      "description": "Our house blend hits sweet, smoky, and seriously addictive."
+    },
+    {
+      "icon": "⚡",
+      "title": "Speed Served",
+      "description": "Hot plates out fast — lunch breaks and late-night runs covered."
+    },
+    {
+      "icon": "🎉",
+      "title": "Happy Hour",
+      "description": "Weekly deals, combo steals, and surprises for regulars."
+    }
+  ],
+  "exclusiveOffersTitle": "Dash Deals — This Week Only",
+  "exclusiveOffers": [
+    {
+      "badge": "BOGO",
+      "title": "Double Wrap Tuesday",
+      "description": "Buy any kebab wrap, get the second one 50% off. Dine-in or takeaway."
+    },
+    {
+      "badge": "COMBO",
+      "title": "Happy Meal Box",
+      "description": "Kebab + fries + drink for one killer price. Available all week after 4 PM."
+    },
+    {
+      "badge": "FREE",
+      "title": "Sauce Squad Upgrade",
+      "description": "Order any platter and we'll load extra house sauce on the house."
+    }
+  ],
+  "menuCategoriesTitle": "Kebab Kingdom",
+  "categories": [],
+  "menuSectionSubtitle": "The Menu",
+  "menuSectionTitle": "Stack It. Sauce It. Smash It.",
+  "menuShowAllText": "Show All Dishes",
+  "menuShowLessText": "Show Less",
+  "menuItems": [],
+  "popularTitle": "Fan Favorites",
+  "popularItems": [
+    { "name": "Doner Kebab", "price": "24 QAR", "keywords": ["donerkebab"] },
+    { "name": "Shawarma", "price": "22 QAR", "keywords": ["shawarma"] },
+    { "name": "Burger", "price": "28 QAR", "keywords": ["burger"] },
+    { "name": "Pizza", "price": "35 QAR", "keywords": ["pizza"] },
+    { "name": "Kabsa", "price": "30 QAR", "keywords": ["kebsa"] },
+    { "name": "Samosa", "price": "12 QAR", "keywords": ["samosa"] }
+  ],
+  "stats": [
+    { "value": "15K+", "label": "Wraps Served" },
+    { "value": "30+", "label": "Kebab Styles" },
+    { "value": "4.9★", "label": "Happy Rating" },
+    { "value": "24/7", "label": "Order Online" }
+  ],
+  "newsletterTitle": "Special Offers for Our Guests",
+  "newsletterText": "Subscribe to receive family meal discounts, seasonal specials, and thoughtful offers — crafted with care for our valued guests.",
+  "newsletterPlaceholder": "your@email.com",
+  "newsletterButton": "Get Offers",
+  "newsletterBg": "#FFFFFF",
+  "newsletterTitleColor": "#00AF7E",
+  "newsletterTextColor": "#1A1A1A",
+  "footerBg": "linear-gradient(165deg, #015601 0%, #007a4d 52%, #00AF7E 100%)",
+  "footerTextColor": "#FFFEEC",
+  "footerHeadingColor": "#FDD301",
+  "footerLinkColor": "#FBC405",
+  "footerText": "Green grill, golden crunch, orange heat — Dash Happy Kebap serves joy on a plate.",
+  "ctaText": "Our Story",
+  "menuCtaText": "Order Now",
+  "aboutCtaText": "See The Grill",
+  "contactEmail": "hello@dashappykebap.com",
+  "defaultLanguage": "fr",
+  "showLanguageToggle": false,
+  "locale": {
+    "fr": {
+      "welcomeText": "Bienvenue chez Dash Happy Kebap",
+      "tagline": "Enroule. Grille. Savoure.",
+      "heroSubtext": "Kebabs flambés, wraps généreux et énergie street-food — tout chaud de la grille, prêt quand vous l'êtes.",
+      "promoText": "🔥 1 wrap acheté, le 2e à -50 % chaque mardi · Boisson offerte dès 25 $",
+      "aboutTitle": "Né sur le grill",
+      "aboutText": "Dash Happy Kebap, c'est là où les épices audacieuses rencontrent le feu de la braise. On garnit chaque wrap, on sauce avec générosité, et on sert avec le sourire.",
+      "aboutText2": "Du döner et shawarma classiques aux accompagnements et boissons bien fraîches — une bouchée et vous comprendrez pourquoi on s'appelle Happy.",
+      "aboutEyebrow": "À propos de Dash Happy Kebap",
+      "aboutHighlights": [
+        "Kebabs grillés au charbon",
+        "Mélange d'épices maison",
+        "Prêt en quelques minutes",
+        "Ouvert pour les envies tardives"
+      ],
+      "whyChooseTitle": "La différence Dash",
+      "whyChooseHeadline": "Rapide, frais et plein de feu",
+      "whyChooseItems": [
+        {
+          "icon": "🔥",
+          "title": "Grillé à la flamme",
+          "description": "Vrai feu, vraie croûte — chaque kebab embrasé par la grille."
+        },
+        {
+          "icon": "🌶️",
+          "title": "Épices secrètes",
+          "description": "Notre mélange maison, doux, fumé et franchement addictif."
+        },
+        {
+          "icon": "⚡",
+          "title": "Service express",
+          "description": "Assiettes chaudes en un clin d'œil — pause déjeuner ou fin de soirée."
+        },
+        {
+          "icon": "🎉",
+          "title": "Happy Hour",
+          "description": "Offres hebdomadaires, menus combo et surprises pour nos habitués."
+        }
+      ],
+      "exclusiveOffersTitle": "Offres Dash — cette semaine seulement",
+      "exclusiveOffers": [
+        {
+          "badge": "1+1",
+          "title": "Mardi des wraps doubles",
+          "description": "Achetez un wrap kebab, le second à -50 %. Sur place ou à emporter."
+        },
+        {
+          "badge": "COMBO",
+          "title": "Menu Happy Box",
+          "description": "Kebab + frites + boisson à prix doux. Toute la semaine après 16 h."
+        },
+        {
+          "badge": "OFFERT",
+          "title": "Sauce en plus",
+          "description": "Commandez un plat et recevez une portion supplémentaire de sauce maison."
+        }
+      ],
+      "menuCategoriesTitle": "Royaume du kebab",
+      "menuSectionSubtitle": "La carte",
+      "menuSectionTitle": "Garnis. Sauce. Déguste.",
+      "menuShowAllText": "Voir tous les plats",
+      "menuShowLessText": "Voir moins",
+      "menuEmptyMessage": "Aucun plat dans cette catégorie pour le moment.",
+      "popularTitle": "Les favoris",
+      "popularItems": [
+        { "name": "Döner kebab", "price": "24 QAR", "keywords": ["donerkebab"] },
+        { "name": "Shawarma", "price": "22 QAR", "keywords": ["shawarma"] },
+        { "name": "Burger", "price": "28 QAR", "keywords": ["burger"] },
+        { "name": "Pizza", "price": "35 QAR", "keywords": ["pizza"] },
+        { "name": "Kabsa", "price": "30 QAR", "keywords": ["kebsa"] },
+        { "name": "Samosa", "price": "12 QAR", "keywords": ["samosa"] }
+      ],
+      "stats": [
+        { "value": "15K+", "label": "Wraps servis" },
+        { "value": "30+", "label": "Styles de kebab" },
+        { "value": "4,9★", "label": "Note Happy" },
+        { "value": "24/7", "label": "Commande en ligne" }
+      ],
+      "newsletterTitle": "Offres spéciales pour nos invités",
+      "newsletterText": "Inscrivez-vous pour recevoir des réductions sur les repas en famille, des offres saisonnières et des attentions réservées à nos invités.",
+      "newsletterPlaceholder": "votre@email.com",
+      "newsletterButton": "Recevoir les offres",
+      "footerText": "Grill vert, croquant doré, chaleur orange — Dash Happy Kebap sert la joie dans l'assiette.",
+      "footerQuickLinksHeading": "Liens rapides",
+      "footerContactHeading": "Contact",
+      "footerCopyright": "© 2026 Dash Happy Kebap. Tous droits réservés.",
+      "ctaText": "Notre histoire",
+      "menuCtaText": "Commander",
+      "aboutCtaText": "Voir le grill",
+      "navItems": [
+        { "key": "Home", "label": "Accueil" },
+        { "key": "Menu", "label": "Carte" },
+        { "key": "About", "label": "À propos" },
+        { "key": "Contact", "label": "Contact" }
+      ],
+      "categoryNames": {
+        "all": "Tout",
+        "burger": "Burgers",
+        "pizza": "Pizzas",
+        "shawarma": "Shawarma",
+        "sides": "Accompagnements",
+        "drinks": "Boissons"
+      },
+      "dishNames": {
+        "Biryani": "Biryani",
+        "Naan Bread": "Pain naan",
+        "Doner Kebab": "Döner kebab",
+        "Roast Chicken": "Poulet rôti",
+        "Orange Juice": "Jus d'orange",
+        "Lemon Juice": "Jus de citron",
+        "Pakoras": "Pakoras",
+        "Teriyaki": "Teriyaki",
+        "Shawarma": "Shawarma",
+        "Burger": "Burger",
+        "Pizza": "Pizza",
+        "Kabsa": "Kabsa",
+        "Samosa": "Samosa"
+      }
+    },
+    "ar": {
+      "welcomeText": "أهلاً في داش هابي كباب",
+      "tagline": "لف. اشوِ. استمتع.",
+      "heroSubtext": "كباب على الجمر، لفائف محشية، وروح أكل الشارع — ساخن من الشواية ومستعد لك.",
+      "promoText": "🔥 اشترِ لفة واحصل على الثانية بنصف السعر كل ثلاثاء · مشروب مجاني للطلبات فوق ٢٥$",
+      "aboutTitle": "وُلد على الشواية",
+      "aboutText": "داش هابي كباب هو حيث تلتقي التوابل الجريئة بالجمر. نحشي كل لفة، نصوّصها بقوة، ونقدّمها بحماس.",
+      "aboutText2": "من الدونر والشاورما إلى المقبلات والمشروبات المثلجة — لقمة واحدة وبتعرف ليش اسمنا Happy.",
+      "aboutEyebrow": "عن داش هابي كباب",
+      "aboutHighlights": [
+        "كباب مشوي على الفحم",
+        "خلطة توابلنا السرية",
+        "جاهز في دقائق",
+        "مفتوح لجوع الليل"
+      ],
+      "whyChooseTitle": "فرق داش",
+      "whyChooseHeadline": "سريع، طازج، ونار",
+      "whyChooseItems": [
+        {
+          "icon": "🔥",
+          "title": "شواء على الجمر",
+          "description": "نار حقيقية ونكهة مدخنة — كل كباب يلمس الشواية."
+        },
+        {
+          "icon": "🌶️",
+          "title": "توابل سرية",
+          "description": "خلطتنا الحارة حلوة ومدخنة ومسببة للإدمان."
+        },
+        {
+          "icon": "⚡",
+          "title": "سرعة في التقديم",
+          "description": "أطباق ساخنة بسرعة — للغداء ولليل."
+        },
+        {
+          "icon": "🎉",
+          "title": "ساعة السعادة",
+          "description": "عروض أسبوعية وكومبوات وخصومات للزبائن الدائمين."
+        }
+      ],
+      "exclusiveOffersTitle": "عروض داش — هذا الأسبوع فقط",
+      "exclusiveOffers": [
+        {
+          "badge": "١+١",
+          "title": "ثلاثاء اللفات المزدوجة",
+          "description": "اشترِ أي لفة كباب واحصل على الثانية بنصف السعر. محلي أو سفري."
+        },
+        {
+          "badge": "كومبو",
+          "title": "صندوق السعادة",
+          "description": "كباب + بطاطس + مشروب بسعر واحد مميز. بعد الساعة ٤ مساءً طوال الأسبوع."
+        },
+        {
+          "badge": "مجاناً",
+          "title": "ترقية صوص إضافي",
+          "description": "اطلب أي طبق كبير واحصل على صوص البيت الإضافي مجاناً."
+        }
+      ],
+      "menuCategoriesTitle": "مملكة الكباب",
+      "menuSectionSubtitle": "القائمة",
+      "menuSectionTitle": "حشّي. صوّص. استمتع.",
+      "menuShowAllText": "عرض كل الأطباق",
+      "menuShowLessText": "عرض أقل",
+      "menuEmptyMessage": "ما في أطباق في هذا القسم حالياً.",
+      "popularTitle": "أكثر الأطباق طلباً",
+      "popularItems": [
+        { "name": "دنر كباب", "price": "٢٤ ر.ق", "keywords": ["donerkebab"] },
+        { "name": "شاورما", "price": "٢٢ ر.ق", "keywords": ["shawarma"] },
+        { "name": "برجر", "price": "٢٨ ر.ق", "keywords": ["burger"] },
+        { "name": "بيتزا", "price": "٣٥ ر.ق", "keywords": ["pizza"] },
+        { "name": "كبسة", "price": "٣٠ ر.ق", "keywords": ["kebsa"] },
+        { "name": "سمبوسة", "price": "١٢ ر.ق", "keywords": ["samosa"] }
+      ],
+      "stats": [
+        { "value": "+١٥ ألف", "label": "لفة مقدّمة" },
+        { "value": "+٣٠", "label": "نوع كباب" },
+        { "value": "٤٫٩★", "label": "تقييم السعادة" },
+        { "value": "٢٤/٧", "label": "طلب أونلاين" }
+      ],
+      "newsletterTitle": "عروض خاصة لضيوفنا",
+      "newsletterText": "اشترك ليصلك خصومات الوجبات العائلية، العروض الموسمية، وعروضنا المميزة — مُعدّة باهتمام لضيوفنا الكرام.",
+      "newsletterPlaceholder": "بريدك الإلكتروني",
+      "newsletterButton": "احصل على العروض",
+      "footerText": "شواية خضراء، قرمشة ذهبية، حرارة برتقالية — داش هابي كباب يقدّم الفرح في كل طبق.",
+      "footerQuickLinksHeading": "روابط سريعة",
+      "footerContactHeading": "تواصل معنا",
+      "footerCopyright": "© ٢٠٢٦ داش هابي كباب. جميع الحقوق محفوظة.",
+      "ctaText": "قصتنا",
+      "menuCtaText": "اطلب الآن",
+      "aboutCtaText": "شوف الشواية",
+      "navItems": [
+        { "key": "Home", "label": "الرئيسية" },
+        { "key": "Menu", "label": "القائمة" },
+        { "key": "About", "label": "من نحن" },
+        { "key": "Contact", "label": "تواصل معنا" }
+      ],
+      "categoryNames": {
+        "all": "الكل",
+        "burger": "برجر",
+        "pizza": "بيتزا",
+        "shawarma": "شاورما",
+        "sides": "مقبلات",
+        "drinks": "مشروبات"
+      },
+      "dishNames": {
+        "Biryani": "برياني",
+        "Naan Bread": "خبز نان",
+        "Doner Kebab": "دنر كباب",
+        "Roast Chicken": "دجاج مشوي",
+        "Orange Juice": "عصير برتقال",
+        "Lemon Juice": "عصير ليمون",
+        "Pakoras": "باكورا",
+        "Teriyaki": "ترياكي",
+        "Shawarma": "شاورما",
+        "Burger": "برجر",
+        "Pizza": "بيتزا",
+        "Kabsa": "كبسة",
+        "Samosa": "سمبوسة"
+      }
+    }
+  }
+}
