@@ -104,12 +104,6 @@
     bottom: 0;
   }
 
-  .minimalist-page[data-slug="dashappykebap"] .hero-grid__image {
-    right: -10px;
-    bottom: -50px;
-    height: 360px;
-  }
-
   .minimalist-page--rtl .hero-grid__image {
     height: 320px;
     left: 32px;
@@ -158,14 +152,6 @@
   transform: translateY(-50%);
 }
 
-@media (min-width: 1024px) {
-  .minimalist-page[data-slug="dashappykebap"] .site-nav__logo-img {
-    height: 7rem;
-    top: 32%;
-    transform: translateY(-50%);
-  }
-}
-
 @media (max-width: 767px) {
   .minimalist-page[data-slug="dashappykebap"] .site-nav__logo {
     margin-top: 5rem;
@@ -173,13 +159,13 @@
 
   .minimalist-page[data-slug="dashappykebap"] .hero-grid__media {
     margin-top: 0.5rem;
-    margin-bottom: -2.5rem;
+    margin-bottom: -1rem;
   }
 
   .minimalist-page[data-slug="dashappykebap"] .hero-grid__image {
     height: 21rem;
     max-width: min(100%, 17rem);
-    transform: translateY(2.5rem);
+    transform: translateY(-1rem);
   }
 }
 
@@ -215,6 +201,83 @@
 .minimalist-page[data-slug="dashappykebap"] .site-nav__mobile-menu .site-nav__link--active {
   background: rgba(251, 153, 76, 0.45);
   color: #ffffff;
+}
+
+/* Dash Happy Kebap — lg hero & header: fixed px for consistent deploy */
+@media (min-width: 1024px) {
+  .minimalist-page[data-slug="dashappykebap"] .site-nav {
+    padding: 20px 0;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .site-nav__logo {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .site-nav__logo-img {
+    height: 112px;
+    top: 32%;
+    transform: translateY(-50%);
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .site-nav__links {
+    justify-content: flex-end;
+    gap: 48px;
+    padding-right: 72px;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .site-nav__links a {
+    font-size: 14px;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .hero-grid {
+    height: 380px;
+    min-height: 380px;
+    max-height: 380px;
+    padding: 8px 0 28px;
+    gap: 16px;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .hero-grid__text {
+    max-width: 512px;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .hero-grid__media {
+    width: 460px;
+    height: 380px;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .hero-grid__image {
+    right: -20px;
+    top: -35px;
+    bottom: auto;
+    height: 480px;
+    width: auto;
+    max-width: none;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .hero-welcome {
+    font-size: 13px;
+    margin-bottom: 8px;
+    letter-spacing: 2.5px;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .hero-headline {
+    font-size: 56px;
+    line-height: 59px;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .hero-subtext {
+    font-size: 14px;
+    line-height: 23px;
+    max-width: 384px;
+    margin-top: 16px;
+  }
+
+  .minimalist-page[data-slug="dashappykebap"] .hero-actions {
+    margin-top: 24px;
+    gap: 12px;
+  }
 }
 
 .minimalist-page[data-slug="dashappykebap"] .category-item__label {
@@ -470,13 +533,6 @@
   transform-origin: bottom right;
 }
 
-/* Dash Happy Kebap — custom hero image position (tweak `right` / `bottom` / `height` here) */
-.minimalist-page[data-slug="dashappykebap"] .hero-grid__image {
-  right: -20px;
-  top: -35px;
-  height: 500px;
-}
-
 @media (max-width: 767px) {
   .site-nav {
     grid-template-columns: 1fr auto;
@@ -656,7 +712,7 @@
   .minimalist-page[data-slug="dashappykebap"] .hero-grid__image {
     height: 21rem;
     max-width: min(100%, 17rem);
-    transform: translateY(2.5rem);
+    transform: translateY(-1rem);
   }
 
   .hero-welcome {
@@ -821,8 +877,8 @@
   }
 
   .minimalist-page[data-slug="dashappykebap"] .hero-grid__image {
-    right: -30px;
-    bottom: -50px;
+    right: 30px;
+    bottom: -30px;
     height: 320px;
     width: auto !important;
   }
