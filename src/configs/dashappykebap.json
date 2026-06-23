@@ -59,7 +59,7 @@
       "description": "Our house blend hits sweet, smoky, and seriously addictive."
     },
     {
-      "icon": "⚡",
+      "icon": "⏱️",
       "title": "Speed Served",
       "description": "Hot plates out fast — lunch breaks and late-night runs covered."
     },
@@ -96,12 +96,12 @@
   "menuItems": [],
   "popularTitle": "Fan Favorites",
   "popularItems": [
-    { "name": "Doner Kebab", "price": "24 QAR", "keywords": ["donerkebab"] },
-    { "name": "Shawarma", "price": "22 QAR", "keywords": ["shawarma"] },
-    { "name": "Burger", "price": "28 QAR", "keywords": ["burger"] },
-    { "name": "Pizza", "price": "35 QAR", "keywords": ["pizza"] },
-    { "name": "Kabsa", "price": "30 QAR", "keywords": ["kebsa"] },
-    { "name": "Samosa", "price": "12 QAR", "keywords": ["samosa"] }
+    { "name": "Doner Kebab", "price": "24€", "keywords": ["donerkebab"] },
+    { "name": "Shawarma", "price": "22€", "keywords": ["shawarma"] },
+    { "name": "Burger", "price": "28€", "keywords": ["burger"] },
+    { "name": "Pizza", "price": "35€", "keywords": ["pizza"] },
+    { "name": "Kabsa", "price": "30€", "keywords": ["kebsa"] },
+    { "name": "Samosa", "price": "12€", "keywords": ["samosa"] }
   ],
   "stats": [
     { "value": "15K+", "label": "Wraps Served" },
@@ -157,7 +157,7 @@
           "description": "Notre mélange maison, doux, fumé et franchement addictif."
         },
         {
-          "icon": "⚡",
+          "icon": "⏱️",
           "title": "Service express",
           "description": "Assiettes chaudes en un clin d'œil — pause déjeuner ou fin de soirée."
         },
@@ -193,12 +193,12 @@
       "menuEmptyMessage": "Aucun plat dans cette catégorie pour le moment.",
       "popularTitle": "Les favoris",
       "popularItems": [
-        { "name": "Döner kebab", "price": "24 QAR", "keywords": ["donerkebab"] },
-        { "name": "Shawarma", "price": "22 QAR", "keywords": ["shawarma"] },
-        { "name": "Burger", "price": "28 QAR", "keywords": ["burger"] },
-        { "name": "Pizza", "price": "35 QAR", "keywords": ["pizza"] },
-        { "name": "Kabsa", "price": "30 QAR", "keywords": ["kebsa"] },
-        { "name": "Samosa", "price": "12 QAR", "keywords": ["samosa"] }
+        { "name": "Döner kebab", "price": "24€", "keywords": ["donerkebab"] },
+        { "name": "Shawarma", "price": "22€", "keywords": ["shawarma"] },
+        { "name": "Burger", "price": "28€", "keywords": ["burger"] },
+        { "name": "Pizza", "price": "35€", "keywords": ["pizza"] },
+        { "name": "Kabsa", "price": "30€", "keywords": ["kebsa"] },
+        { "name": "Samosa", "price": "12€", "keywords": ["samosa"] }
       ],
       "stats": [
         { "value": "15K+", "label": "Wraps servis" },
@@ -276,7 +276,7 @@
           "description": "خلطتنا الحارة حلوة ومدخنة ومسببة للإدمان."
         },
         {
-          "icon": "⚡",
+          "icon": "⏱️",
           "title": "سرعة في التقديم",
           "description": "أطباق ساخنة بسرعة — للغداء ولليل."
         },
@@ -312,12 +312,12 @@
       "menuEmptyMessage": "ما في أطباق في هذا القسم حالياً.",
       "popularTitle": "أكثر الأطباق طلباً",
       "popularItems": [
-        { "name": "دنر كباب", "price": "٢٤ ر.ق", "keywords": ["donerkebab"] },
-        { "name": "شاورما", "price": "٢٢ ر.ق", "keywords": ["shawarma"] },
-        { "name": "برجر", "price": "٢٨ ر.ق", "keywords": ["burger"] },
-        { "name": "بيتزا", "price": "٣٥ ر.ق", "keywords": ["pizza"] },
-        { "name": "كبسة", "price": "٣٠ ر.ق", "keywords": ["kebsa"] },
-        { "name": "سمبوسة", "price": "١٢ ر.ق", "keywords": ["samosa"] }
+        { "name": "دنر كباب", "price": "٢٤€", "keywords": ["donerkebab"] },
+        { "name": "شاورما", "price": "٢٢€", "keywords": ["shawarma"] },
+        { "name": "برجر", "price": "٢٨€", "keywords": ["burger"] },
+        { "name": "بيتزا", "price": "٣٥€", "keywords": ["pizza"] },
+        { "name": "كبسة", "price": "٣٠€", "keywords": ["kebsa"] },
+        { "name": "سمبوسة", "price": "١٢€", "keywords": ["samosa"] }
       ],
       "stats": [
         { "value": "+١٥ ألف", "label": "لفة مقدّمة" },

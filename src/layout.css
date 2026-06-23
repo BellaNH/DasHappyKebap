@@ -200,6 +200,28 @@
   text-shadow: 0 1px 2px rgba(1, 86, 1, 0.45);
 }
 
+/* Dash Happy Kebap — mobile nav dropdown: brand greens & gold */
+.minimalist-page[data-slug="dashappykebap"] .site-nav__mobile-menu {
+  background: rgba(1, 86, 1, 0.97);
+  border: 1px solid rgba(251, 196, 5, 0.4);
+  box-shadow: 0 14px 36px rgba(1, 86, 1, 0.35);
+}
+
+.minimalist-page[data-slug="dashappykebap"] .site-nav__mobile-menu a {
+  color: #ffffff;
+}
+
+.minimalist-page[data-slug="dashappykebap"] .site-nav__mobile-menu a:hover,
+.minimalist-page[data-slug="dashappykebap"] .site-nav__mobile-menu .site-nav__link--active {
+  background: rgba(251, 153, 76, 0.45);
+  color: #ffffff;
+}
+
+/* Dash Happy Kebap — express service icon visible on yellow circle */
+.minimalist-page[data-slug="dashappykebap"] .why-card:nth-child(3) .why-card__icon {
+  background: var(--color-accent);
+}
+
 .minimalist-page[data-slug="dashappykebap"] .category-item__label {
   color: var(--color-primary-bright);
 }
