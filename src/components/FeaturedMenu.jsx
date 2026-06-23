@@ -1,43 +1,77 @@
-import { useEffect, useMemo, useState } from 'react'
-import { menuCardColors } from '../lib/themeStyle'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { menuCardColors, menuCardSurfaceStyle } from '../lib/themeStyle'
 
-const MENU_ROWS = 2
-
-function useMenuColumns() {
-  const [columns, setColumns] = useState(3)
+function useIsLg() {
+  const [isLg, setIsLg] = useState(false)
 
   useEffect(() => {
-    const update = () => {
-      if (window.matchMedia('(max-width: 767px)').matches) setColumns(1)
-      else if (window.matchMedia('(max-width: 1023px)').matches) setColumns(2)
-      else setColumns(3)
-    }
-
+    const mq = window.matchMedia('(min-width: 1024px)')
+    const update = () => setIsLg(mq.matches)
     update()
-    window.addEventListener('resize', update)
-    return () => window.removeEventListener('resize', update)
+    mq.addEventListener('change', update)
+    return () => mq.removeEventListener('change', update)
   }, [])
 
-  return columns
+  return isLg
 }
 
 export default function FeaturedMenu({ config, menuItems: itemsProp, emptyMessage }) {
-  const { menuSectionTitle, menuSectionSubtitle, menuShowAllText, menuShowLessText } = config
+  const { menuSectionTitle, menuSectionSubtitle } = config
   const menuItems = itemsProp ?? config.menuItems ?? []
   const cardColors = menuCardColors(config)
-  const columns = useMenuColumns()
-  const [expanded, setExpanded] = useState(false)
+  const sliderRef = useRef(null)
+  const isLg = useIsLg()
 
-  const previewCount = columns * MENU_ROWS
-  const hasMore = menuItems.length > previewCount
-  const visibleItems = useMemo(
-    () => (expanded || !hasMore ? menuItems : menuItems.slice(0, previewCount)),
-    [expanded, hasMore, menuItems, previewCount],
+  const displayItems = useMemo(() => menuItems, [menuItems])
+
+  const scrollSlider = useCallback((direction) => {
+    const track = sliderRef.current
+    if (!track) return
+
+    const card = track.querySelector('.menu-card')
+    const gap = 20
+    const step = card ? card.offsetWidth + gap : 300
+    track.scrollBy({ left: direction * step, behavior: 'smooth' })
+  }, [])
+
+  const grid = (
+    <ul ref={sliderRef} className="menu-grid menu-grid--slider">
+      {displayItems.map((item, index) => {
+        const surface = menuCardSurfaceStyle(config, index, cardColors, true)
+
+        return (
+          <li
+            key={`${item.name}-${index}`}
+            className="menu-card"
+            style={{
+              backgroundColor: surface.backgroundColor,
+              border: surface.border,
+            }}
+          >
+            <h3
+              className="menu-card__title font-serif"
+              style={{ color: surface.titleColor }}
+            >
+              {item.name}
+            </h3>
+
+            <div className="menu-card__image-wrap">
+              <img src={item.image} alt={item.name} className="menu-card__image" />
+            </div>
+
+            {item.caption && (
+              <p
+                className="menu-card__caption"
+                style={{ fontFamily: 'var(--font-script)', color: surface.titleColor }}
+              >
+                {item.caption}
+              </p>
+            )}
+          </li>
+        )
+      })}
+    </ul>
   )
-
-  useEffect(() => {
-    setExpanded(false)
-  }, [menuItems])
 
   return (
     <section id="menu" className="menu-section">
@@ -60,46 +94,29 @@ export default function FeaturedMenu({ config, menuItems: itemsProp, emptyMessag
         {menuItems.length === 0 && emptyMessage ? (
           <p className="menu-section__empty">{emptyMessage}</p>
         ) : (
-          <>
-            <ul className="menu-grid">
-              {visibleItems.map((item, index) => (
-                <li
-                  key={`${item.name}-${index}`}
-                  className="menu-card"
-                  style={{ backgroundColor: cardColors[index % cardColors.length] }}
-                >
-                  <h3 className="menu-card__title font-serif" style={{ color: 'var(--color-text)' }}>
-                    {item.name}
-                  </h3>
-
-                  <div className="menu-card__image-wrap">
-                    <img src={item.image} alt={item.name} className="menu-card__image" />
-                  </div>
-
-                  {item.caption && (
-                    <p className="menu-card__caption" style={{ fontFamily: 'var(--font-script)', color: 'var(--color-text)' }}>
-                      {item.caption}
-                    </p>
-                  )}
-                </li>
-              ))}
-            </ul>
-
-            {hasMore && (
-              <div className="menu-section__toggle">
-                <button
-                  type="button"
-                  className={`btn ${expanded ? 'btn--yellow' : 'btn--red'}`}
-                  onClick={() => setExpanded((open) => !open)}
-                  aria-expanded={expanded}
-                >
-                  {expanded
-                    ? (menuShowLessText ?? 'Show Less')
-                    : (menuShowAllText ?? 'Show All Dishes')}
-                </button>
-              </div>
+          <div className="menu-slider" aria-label="Food menu slider">
+            {isLg && (
+              <button
+                type="button"
+                className="menu-slider__btn menu-slider__btn--prev"
+                aria-label="Previous dishes"
+                onClick={() => scrollSlider(-1)}
+              >
+                ‹
+              </button>
             )}
-          </>
+            {grid}
+            {isLg && (
+              <button
+                type="button"
+                className="menu-slider__btn menu-slider__btn--next"
+                aria-label="Next dishes"
+                onClick={() => scrollSlider(1)}
+              >
+                ›
+              </button>
+            )}
+          </div>
         )}
       </div>
     </section>

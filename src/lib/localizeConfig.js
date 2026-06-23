@@ -24,6 +24,7 @@ export function applyLocale(config, lang) {
         price: localized?.price ?? item.price,
       }
     }),
+    categoryShowcaseItems: localeBlock.categoryShowcaseItems ?? config.categoryShowcaseItems,
     whyChooseItems: localeBlock.whyChooseItems ?? config.whyChooseItems,
     aboutHighlights: localeBlock.aboutHighlights ?? config.aboutHighlights,
     stats: localeBlock.stats ?? config.stats,

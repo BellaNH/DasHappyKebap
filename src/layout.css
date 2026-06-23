@@ -840,8 +840,122 @@
   margin-top: 2rem;
 }
 
+/* Swipeable food slider — all screens; prev/next on lg */
+.menu-slider {
+  position: relative;
+  margin: 0 -1rem;
+  padding: 0 1rem 0.5rem;
+  overflow: hidden;
+}
+
+.menu-slider__btn {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .menu-slider {
+    padding: 0 52px 0.5rem;
+  }
+
+  .menu-slider__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    border: 2px solid rgba(1, 86, 1, 0.15);
+    border-radius: 9999px;
+    background: #ffffff;
+    color: #015601;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    transform: translateY(-50%);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .menu-slider__btn:hover {
+    background: #015601;
+    color: #ffffff;
+    border-color: #015601;
+  }
+
+  .menu-slider__btn--prev {
+    left: 0;
+  }
+
+  .menu-slider__btn--next {
+    right: 0;
+  }
+}
+
+.menu-grid--slider {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 16px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 4px 1rem 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  touch-action: pan-x;
+  scrollbar-width: none;
+}
+
+.menu-grid--slider::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-grid--slider .menu-card {
+  flex: 0 0 78%;
+  width: 78%;
+  min-width: 260px;
+  max-width: 300px;
+  min-height: 340px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+}
+
+.minimalist-page[data-slug="dashappykebap"] .menu-grid--slider .menu-card {
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+}
+
+.minimalist-page[data-slug="dashappykebap"] .menu-grid--slider .menu-card::before {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .menu-grid--slider {
+    gap: 20px;
+    padding: 4px 0 20px;
+  }
+
+  .menu-grid--slider .menu-card {
+    flex: 0 0 280px;
+    width: 280px;
+    min-width: 280px;
+    max-width: 280px;
+    min-height: 360px;
+  }
+}
+
 @media (max-width: 767px) {
-  .menu-section .menu-grid {
+  .menu-section .menu-grid:not(.menu-grid--slider) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -856,6 +970,13 @@
     width: min(100%, 20rem);
     max-width: 20rem;
     flex-shrink: 0;
+  }
+
+  .menu-grid--slider .menu-card {
+    flex: 0 0 85%;
+    width: 85%;
+    min-width: 240px;
+    max-width: 280px;
   }
 }
 
@@ -881,7 +1002,7 @@
     width: auto !important;
   }
 
-  .menu-grid {
+  .menu-grid:not(.menu-grid--slider) {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 18rem));
     justify-content: center;
@@ -1352,6 +1473,162 @@
 
 .about-grid__content .btn {
   margin-top: 1.25rem;
+}
+
+/* ── Category showcase (replaces Les favoris) ── */
+.category-showcase {
+  background: #ffffff;
+  padding: 4rem 0;
+}
+
+.category-showcase__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.category-showcase__title {
+  margin: 0 0 2rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-text);
+  text-transform: capitalize;
+}
+
+.category-showcase__title::after {
+  content: '';
+  display: block;
+  width: 56px;
+  height: 3px;
+  margin-top: 0.75rem;
+  background: var(--color-accent);
+  border-radius: 9999px;
+}
+
+.category-showcase__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.category-showcase__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.category-showcase__icon {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 9999px;
+  font-size: 1.35rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.category-showcase__item-title {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.category-showcase__item-desc {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.62);
+  max-width: 28rem;
+}
+
+.category-showcase__collage {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 14px;
+  min-height: 420px;
+}
+
+.category-showcase__photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+}
+
+.category-showcase__photo--main {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  min-height: 420px;
+}
+
+.category-showcase__photo--top {
+  grid-column: 2;
+  grid-row: 1;
+  min-height: 200px;
+}
+
+.category-showcase__photo--bottom {
+  grid-column: 2;
+  grid-row: 2;
+  min-height: 200px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .category-showcase {
+    padding: 3.5rem 2.5rem;
+  }
+
+  .category-showcase .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .category-showcase__grid {
+    grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .category-showcase__collage {
+    min-height: 280px;
+    max-width: 340px;
+    width: 100%;
+  }
+
+  .category-showcase__photo--main {
+    min-height: 280px;
+  }
+
+  .category-showcase__photo--top,
+  .category-showcase__photo--bottom {
+    min-height: 128px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .category-showcase__grid {
+    grid-template-columns: 1.05fr 1fr;
+    gap: 3rem;
+  }
+
+  .category-showcase__collage {
+    min-height: 480px;
+  }
+
+  .category-showcase__photo--main {
+    min-height: 480px;
+  }
 }
 
 /* ── Popular dishes ── */
@@ -1834,11 +2111,11 @@
   display: none;
 }
 
-.minimalist-page[data-slug="dashappykebap"] .menu-card:nth-child(odd) {
+.minimalist-page[data-slug="dashappykebap"] .menu-grid:not(.menu-grid--slider) .menu-card:nth-child(odd) {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
 }
 
-.minimalist-page[data-slug="dashappykebap"] .menu-card:nth-child(even) {
+.minimalist-page[data-slug="dashappykebap"] .menu-grid:not(.menu-grid--slider) .menu-card:nth-child(even) {
   position: relative;
   overflow: hidden;
   background-color: #ffffff !important;
@@ -1846,7 +2123,7 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-.minimalist-page[data-slug="dashappykebap"] .menu-card:nth-child(even)::before {
+.minimalist-page[data-slug="dashappykebap"] .menu-grid:not(.menu-grid--slider) .menu-card:nth-child(even)::before {
   display: block;
   content: '';
   position: absolute;

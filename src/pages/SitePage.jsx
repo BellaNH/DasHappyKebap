@@ -10,7 +10,7 @@ import Hero from '../components/Hero'
 import WhyChooseUs from '../components/WhyChooseUs'
 import MenuSection from '../components/MenuSection'
 import AboutSection from '../components/AboutSection'
-import PopularDishes from '../components/PopularDishes'
+import CategoriesShowcase from '../components/CategoriesShowcase'
 import StatsBar from '../components/StatsBar'
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
@@ -60,7 +60,7 @@ export default function SitePage() {
       <ExclusiveOffers config={config} />
       <MenuSection config={config} />
       <AboutSection config={config} />
-      <PopularDishes config={config} />
+      <CategoriesShowcase config={config} />
       <StatsBar config={config} />
       <Newsletter config={config} />
       <Footer config={config} />

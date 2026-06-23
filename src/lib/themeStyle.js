@@ -32,3 +32,27 @@ export function menuCardColors(config) {
     c.secondary ?? '#FFC419',
   ]
 }
+
+const dashappySliderTones = [
+  { bg: '#015601', title: '#FFFFFF' },
+  { bg: '#FBC405', title: '#000000' },
+  { bg: '#FB994C', title: '#FFFFFF' },
+  { bg: '#00AF7E', title: '#FFFFFF' },
+  { bg: '#FDD301', title: '#000000' },
+]
+
+export function menuCardSurfaceStyle(config, index, cardColors, isSlider) {
+  if (isSlider && config.slug === 'dashappykebap') {
+    const tone = dashappySliderTones[index % dashappySliderTones.length]
+    return {
+      backgroundColor: tone.bg,
+      border: tone.border,
+      titleColor: tone.title,
+    }
+  }
+
+  return {
+    backgroundColor: cardColors[index % cardColors.length],
+    titleColor: 'var(--color-text)',
+  }
+}

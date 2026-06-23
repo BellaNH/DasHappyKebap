@@ -95,6 +95,24 @@
   "menuShowLessText": "Show Less",
   "menuItems": [],
   "popularTitle": "Fan Favorites",
+  "categoryShowcaseTitle": "Our Categories",
+  "categoryShowcaseItems": [
+    {
+      "icon": "🥙",
+      "title": "Kebabs & Wraps",
+      "description": "Flame-grilled döner, shawarma and loaded wraps — hot off the grill."
+    },
+    {
+      "icon": "🍗",
+      "title": "Fried Chicken",
+      "description": "Crispy golden chicken buckets and sides for sharing."
+    },
+    {
+      "icon": "🍔",
+      "title": "Burgers & More",
+      "description": "Stacked burgers, fries and street-food classics done loud."
+    }
+  ],
   "popularItems": [
     { "name": "Doner Kebab", "price": "24€", "keywords": ["donerkebab"] },
     { "name": "Shawarma", "price": "22€", "keywords": ["shawarma"] },
@@ -192,6 +210,24 @@
       "menuShowLessText": "Voir moins",
       "menuEmptyMessage": "Aucun plat dans cette catégorie pour le moment.",
       "popularTitle": "Les favoris",
+      "categoryShowcaseTitle": "Nos catégories",
+      "categoryShowcaseItems": [
+        {
+          "icon": "🥙",
+          "title": "Kebabs & wraps",
+          "description": "Döner, shawarma et wraps garnis — tout chaud de la grille."
+        },
+        {
+          "icon": "🍗",
+          "title": "Poulet frit",
+          "description": "Buckets de poulet croustillant et accompagnements à partager."
+        },
+        {
+          "icon": "🍔",
+          "title": "Burgers & plus",
+          "description": "Burgers généreux, frites et classiques street-food."
+        }
+      ],
       "popularItems": [
         { "name": "Döner kebab", "price": "24€", "keywords": ["donerkebab"] },
         { "name": "Shawarma", "price": "22€", "keywords": ["shawarma"] },
@@ -311,6 +347,24 @@
       "menuShowLessText": "عرض أقل",
       "menuEmptyMessage": "ما في أطباق في هذا القسم حالياً.",
       "popularTitle": "أكثر الأطباق طلباً",
+      "categoryShowcaseTitle": "فئاتنا",
+      "categoryShowcaseItems": [
+        {
+          "icon": "🥙",
+          "title": "كباب ولفائف",
+          "description": "دونر وشاورما ولفائف محشية — ساخنة من الشواية."
+        },
+        {
+          "icon": "🍗",
+          "title": "دجاج مقلي",
+          "description": "دجاج مقرمش ذهبي مع مقبلات للمشاركة."
+        },
+        {
+          "icon": "🍔",
+          "title": "برجر وأكثر",
+          "description": "برجر محمّل وبطاطس وأطباق الشارع المميزة."
+        }
+      ],
       "popularItems": [
         { "name": "دنر كباب", "price": "٢٤€", "keywords": ["donerkebab"] },
         { "name": "شاورما", "price": "٢٢€", "keywords": ["shawarma"] },
