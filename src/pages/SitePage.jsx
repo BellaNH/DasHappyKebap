@@ -15,7 +15,7 @@ import StatsBar from '../components/StatsBar'
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
 
-const SLUG = 'hayak'
+const SLUG = 'dashappykebap'
 
 export default function SitePage() {
   const { lang, dir, setLang } = useLanguage()
@@ -41,7 +41,7 @@ export default function SitePage() {
     return (
       <main className="flex min-h-svh flex-col items-center justify-center px-6 text-center">
         <h1 className="font-serif text-3xl">Site unavailable</h1>
-        <p className="mt-3 opacity-70">Hayak config could not be loaded.</p>
+        <p className="mt-3 opacity-70">Dash Happy Kebap config could not be loaded.</p>
       </main>
     )
   }
