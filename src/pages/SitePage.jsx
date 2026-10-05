@@ -1,10 +1,11 @@
-﻿import { useEffect, useMemo } from 'react'
+﻿import { useEffect, useMemo, useRef } from 'react'
 import { getConfigBySlug } from '../lib/getConfig'
 import { enrichConfig } from '../lib/restaurantAssets'
 import { applyLocale } from '../lib/localizeConfig'
 import { useLanguage } from '../lib/LanguageContext'
 import { themeStyle } from '../lib/themeStyle'
 import { handleAnchorClick } from '../lib/smoothScroll'
+import { useRecordTour } from '../hooks/useRecordTour'
 import ExclusiveOffers from '../components/ExclusiveOffers'
 import Hero from '../components/Hero'
 import WhyChooseUs from '../components/WhyChooseUs'
@@ -19,7 +20,9 @@ const SLUG = 'dashappykebap'
 
 export default function SitePage() {
   const { lang, dir, setLang } = useLanguage()
+  const pageRef = useRef(null)
   const rawConfig = getConfigBySlug(SLUG)
+  useRecordTour(pageRef) // TEMP: remove after filming (+ delete useRecordTour.js)
 
   useEffect(() => {
     setLang(rawConfig?.defaultLanguage ?? 'fr')
@@ -49,6 +52,7 @@ export default function SitePage() {
   return (
     <div
       id="top"
+      ref={pageRef}
       className={`minimalist-page ${dir === 'rtl' ? 'minimalist-page--rtl' : ''}`}
       data-slug={SLUG}
       style={themeStyle(config)}
